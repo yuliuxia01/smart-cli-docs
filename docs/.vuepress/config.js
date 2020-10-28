@@ -30,11 +30,11 @@ module.exports = {
                 sidebarDepth: 1,
                 children: [
                     {
-                        title: '安装',
+                        title: '快速开始',
                         path: '/guide/install'
                     },
                     {
-                        title: '目录',
+                        title: '目录结构',
                         path: '/guide/menu'
                     },
                     {
