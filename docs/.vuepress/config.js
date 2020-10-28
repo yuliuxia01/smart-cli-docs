@@ -4,9 +4,10 @@
  */
 
 module.exports = {
-    host: '127.0.0.1',
-    port: 8080,
-    title: 'smart-cli',
+    // host: '127.0.0.1',
+    // port: 8080,
+    title: 'smart-cli-docs',
+    base: '/smart-cli-docs/',
     description: '针对小程序的开发工具',
     themeConfig: {
         nav: [
