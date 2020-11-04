@@ -2,12 +2,12 @@
 
 # 提交md文档
 git checkout main
-git pull
-git add .
-git commit -m "修改文档"
-git push origin main
-git checkout master # git checkout -b master origin master
-git merge main
+# git pull
+# git add .
+# git commit -m "修改文档"
+# git push origin main
+# git checkout master # git checkout -b master origin master
+# git merge main
 
 #构建
 npm run docs:build
