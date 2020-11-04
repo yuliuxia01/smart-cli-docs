@@ -68,5 +68,8 @@ module.exports = {
                 path: '/standard'
             }
         ]
+    },
+    markdown: {
+        lineNumbers: true
     }
 };

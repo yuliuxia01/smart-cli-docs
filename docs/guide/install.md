@@ -10,27 +10,18 @@ smart-cli 需要 [Node.js](https://nodejs.org/en/) >= 9
 1、全局安装 smart-cli
 ```sh
 $ npm install @baidu/smart-cli -g 或者 sudo install @baidu/smart-cli -g
-```
-安装完成后执行smart
-```sh
 
-$  smart
-
+安装完成后执行smart --version，查看是否安装成功
+$ smart --version
 ```
 
 2、初始化项目，并下载模板
 ```sh
-
 $ smart init projectName
-
 ```
 
 3、安装依赖并运行
 ```sh
-
  $ cd projectName
  $ npm install
- $ npm run serve
-
 ```
-
