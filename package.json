@@ -6,8 +6,8 @@
   "author": "yuliuxia <yuliuxia@baidu.com>",
   "license": "MIT",
   "scripts": {
-    "docs:dev": "vuepress dev docs",
-    "docs:build": "vuepress build docs"
+    "docs:dev": "vuepress dev mkdocs",
+    "docs:build": "vuepress build mkdocs"
   },
   "devDependencies": {
     "vuepress": "^1.6.0"

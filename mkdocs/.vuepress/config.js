@@ -8,6 +8,7 @@ module.exports = {
     // port: 8080,
     title: 'smart-cli-docs',
     base: '/smart-cli-docs/',
+    dest: './docs',
     description: '针对小程序的开发工具',
     themeConfig: {
         nav: [
