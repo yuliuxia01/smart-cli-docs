@@ -8,7 +8,7 @@ npm run dev
 npm run start
 # 相当于
 npm i 
-npm run server
+npm run dev
 ```
 - 启动本地mock
 ```sh

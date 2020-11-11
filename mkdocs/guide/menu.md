@@ -25,8 +25,8 @@ projectName/
 │
 ├─ typings/
 │
-├─ .eslintrc.js
-├─ .fecsrc.js
+├─ .eslintrc
+├─ .fecsrc
 ├─ build.sh
 ├─ ci.yml
 ├─ gulpfile.js
