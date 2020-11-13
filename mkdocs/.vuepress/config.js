@@ -21,20 +21,16 @@ module.exports = {
                 path: '/introduce'
             },
             {
-                title: '基础',
-                path: '/guide/install',
-                collapsable: false,
-                sidebarDepth: 1,
-                children: [
-                    {
-                        title: '开始项目',
-                        path: '/guide/install'
-                    },
-                    {
-                        title: '命令行',
-                        path: '/guide/start'
-                    }
-                ]
+                title: '快速开始',
+                path: '/guide/install'
+            },
+            // {
+            //     title: '命令行',
+            //     path: '/guide/start'
+            // },
+            {
+                title: '配置',
+                path: '/config'
             },
             {
                 title: '模板',
@@ -45,10 +41,6 @@ module.exports = {
                     {
                         title: '目录',
                         path: '/menu/menu'
-                    },
-                    {
-                        title: '配置',
-                        path: '/menu/config'
                     },
                     {
                         title: '编译Build',
@@ -84,5 +76,12 @@ module.exports = {
     },
     markdown: {
         lineNumbers: false
+    },
+    configureWebpack: {
+        resolve: {
+            alias: {
+                '@img': './asserts/img'
+            }
+        }
     }
 };

@@ -5,23 +5,26 @@ smart-cli，为了方便开发小程序时可以快速生成小程序开发目�
 smart-cli 安装要求
 - [Node.js](https://nodejs.org/en/) >= 9
 - npm源需要是百度源，http://registry.npm.baidu-int.com/
+- smart-cli需全局安装
 :::
-### 安装
+### [安装](./guide/install#准备工作)
 ```sh
- npm install @baidu/smart-cli -g --registry=http://registry.npm.baidu-int.com
+sudo npm install @baidu/smart-cli -g --registry=http://registry.npm.baidu-int.com
 ```
-### 初始化
+### [初始化](./guide/install#初始化)
 ```sh
  smart init <app_name>
 ```
-初始化完成后，会快速下载一个[模板目录](./guide/menu)到本地。
-### 开始
+### [安装依赖](./guide/install#安装依赖)
 ```sh
  cd <app_name>
  npm install
+```
+### [开发](./guide/install#本地开发)
+```sh
  npm run dev
 ```
-命令执行完成后，在本地产生一个符合原生小程序规则的 [dist](https://smartprogram.baidu.com/docs/develop/framework/app_service/) 目录，可使用[百度开发者工具](https://smartprogram.baidu.com/docs/introduction/tool/)打开。
+
 ### 特点：
 - 基于[百度原生小程序](https://smartprogram.baidu.com/docs/develop/tutorial/demo/)；
 - 为使用原生语法开发百度小程序提供一套快捷便利的的命令行工具；
