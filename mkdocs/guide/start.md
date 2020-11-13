@@ -1,4 +1,4 @@
-# 功能
+# 默认命令行
 - 启动本地server
 ```sh
 npm run dev

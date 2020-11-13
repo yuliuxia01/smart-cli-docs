@@ -1,19 +1,18 @@
-#  安装
+###  安装
 
 ::: warning 注意
 
 smart-cli 安装要求
 - [Node.js](https://nodejs.org/en/) >= 9
 - npm源需要是百度源，http://registry.npm.baidu-int.com/
- 
+- smart-cli需全局安装
 :::
-本文将帮助你简单了解smart-cli提供了那些功能
 
-1、全局安装 smart-cli
 ```sh
-$ npm install @baidu/smart-cli -g --registry=http://registry.npm.baidu-int.com
+npm install @baidu/smart-cli -g --registry=http://registry.npm.baidu-int.com
 # 安装完成后执行smart --version，查看是否安装成功
-$  smart --version
+smart --version
+
 ```
 ::: tip 注意
 

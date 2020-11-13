@@ -6,7 +6,7 @@
 module.exports = {
     // host: '127.0.0.1',
     // port: 8080,
-    title: 'smart-cli-docs',
+    title: 'smart-cli',
     base: '/smart-cli-docs/',
     dest: './docs',
     description: '针对小程序的开发工具',
@@ -17,38 +17,50 @@ module.exports = {
         ],
         sidebar: [
             {
-                title: '背景介绍',
+                title: '介绍',
                 path: '/introduce'
             },
             {
-                title: '适用场景',
-                path: '/applicable'
-            },
-            {
-                title: '指南',
+                title: '基础',
                 path: '/guide/install',
-                collapsable: true,
+                collapsable: false,
                 sidebarDepth: 1,
                 children: [
                     {
-                        title: '快速开始',
+                        title: '开始项目',
                         path: '/guide/install'
                     },
                     {
-                        title: '目录结构',
-                        path: '/guide/menu'
-                    },
-                    {
-                        title: '功能',
+                        title: '命令行',
                         path: '/guide/start'
+                    }
+                ]
+            },
+            {
+                title: '模板',
+                path: '/menu/menu',
+                collapsable: false,
+                sidebarDepth: 1,
+                children: [
+                    {
+                        title: '目录',
+                        path: '/menu/menu'
                     },
                     {
                         title: '配置',
-                        path: '/guide/global'
+                        path: '/menu/config'
                     },
                     {
-                        title: '插件',
-                        path: '/guide/plugin'
+                        title: '编译Build',
+                        path: '/menu/build'
+                    },
+                    {
+                        title: 'Mock',
+                        path: '/menu/mock'
+                    },
+                    {
+                        title: 'CSS相关',
+                        path: '/menu/style'
                     }
                 ]
             },
@@ -71,6 +83,6 @@ module.exports = {
         ]
     },
     markdown: {
-        lineNumbers: true
+        lineNumbers: false
     }
 };

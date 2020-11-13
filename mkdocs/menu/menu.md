@@ -1,4 +1,4 @@
-# 目录结构
+# 模板目录
 smart-cli推荐的模板目录如下
 ```js
 projectName/
@@ -41,6 +41,7 @@ projectName/
 - postinstall.js install预处理
 - process-plugin.gulp.js 环境变量注入
 - server.gulp.js 本地server
+
 ### src业务代码目录
 - assets/ 静态目录
 - components/ 组件目录
@@ -51,6 +52,13 @@ projectName/
 - app.js 小程序入口js
 - app.json 小程序入口json配置
 - app.less 小程序入口公共css
+
+### 编译命令入口
+- gulpfile.js 
+### 相关配置
+- pkginfo.json 小程序配置文件
+- project.swan.json 小程序配置文件
+
 ### 其他
 - mock/  接口模拟
 - typings/ 类型检测
@@ -58,7 +66,5 @@ projectName/
 - .fecsrc.js 提交校验文件
 - build.sh build生成目录shell
 - ci.yml
-- gulpfile.js 编译命令入口
 - package.json 配置文件
-- pkginfo.json 小程序配置文件
-- project.swan.json 小程序配置文件
+
