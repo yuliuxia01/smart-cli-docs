@@ -4,7 +4,7 @@
 #git checkout main
 git pull
 #构建
-npm run docs:build
+npm run build
 git add .
 git commit -m 'deploy'
 git push origin main
