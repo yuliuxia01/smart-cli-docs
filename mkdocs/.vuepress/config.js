@@ -12,8 +12,9 @@ module.exports = {
     description: '针对小程序的开发工具',
     themeConfig: {
         nav: [
-            {text: '开始', link: '/introduce'},
-            {text: '指南', link: '/guide/install'}
+            {text: '介绍', link: '/introduce'},
+            {text: '快速开始', link: '/guide/install'},
+            {text: '配置', link: '/config'}
         ],
         sidebar: [
             {
@@ -53,6 +54,10 @@ module.exports = {
                     {
                         title: 'CSS相关',
                         path: '/menu/style'
+                    },
+                    {
+                        title: '小程序相关',
+                        path: '/menu/swan'
                     }
                 ]
             },
