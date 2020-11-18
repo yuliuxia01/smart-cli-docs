@@ -66,10 +66,6 @@ Page({
 ### location
 根据地址，获取定位信息，例如经度、纬度
 
-::: tip 注意
-sss
-:::
-
 ### querystring
 
 处理字符串string和对象object的转换的功能，主要有以下api:

@@ -1,13 +1,13 @@
 # 模板目录
 Smart CLI推荐的模板目录如下
 ```js
-projectName/
+<app_name>/
 ├─ build/
 │  ├─ compress.gulp.js
 │  ├─ config.js
 │  ├─ mock.js
 │  ├─ postinstall.js
-│  ├─ process-plugin.gulp.js
+│  ├─ project-swan-plugin.gulp.js
 │  └─ server.gulp.js
 │
 ├─ src/
@@ -37,7 +37,7 @@ projectName/
 - config.js：配置文件；
 - mock.js：本地和远程[MOCK](./mock)执行文件；
 - postinstall.js：package.json中scripts配置项的postinstall钩子执行文件；
-- process-plugin.gulp.js： 环境变量统一，将小程序运行时环境和统一成本地服务的运行时环境；
+- project-swan-plugin.gulp.js：处理百度小程序里的project.swan.json文件；
 - server.gulp.js：启动本地服务（npm run dev）和启动MOCK服务器的执行文件。
 ### src 业务代码目录
 - assets：静态文件目录；

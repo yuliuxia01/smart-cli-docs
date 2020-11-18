@@ -46,7 +46,7 @@ const onlineMock = {
         NODE_ENV: 'onlineMock',
         NODE_URL: ''
     },
-    port: 8080
+    port: 3100
 };
 
 module.exports = {
@@ -107,7 +107,7 @@ rules.swanFile = [
 - stylus：string，匹配制定目录下的stylus，eg：默认配置中的rules.stylus表示匹配业务代码目录下的所有stylus文件；
 - package：string，匹配制定目录下的小程序配置相关文件，eg：默认配置中的rules.package表示匹配业务代码目录下的[pkginfo.json](/menu/swan#pkginfo)、[project.swan.json](/menu/swan#project.swan)；
 - plugins：string，匹配制定目录下的插件相关文件，eg：默认配置中的rules.plugins表示匹配业务代码目录下的plugins目录下的多有js文件；
-- swanFile：array，匹配制定目录下的插件相关文件，，eg：默认配置中的rules.swanFile表示匹配业务代码目录下的除去less，stylus的所有文件；
+- swanFile：array，匹配制定目录下的插件相关文件，eg：默认配置中的rules.swanFile表示匹配业务代码目录下，除去less，stylus的所有文件。
 ## clientMock
 本地Mock时使用，启动一个本地node服务器。具体使用可查看：[Mock](/menu/mock)
 ```js
@@ -121,14 +121,26 @@ const clientMock = {
 ```
 - env：object，环境变量
     - NODE_ENV：表示当前的MOCK环境；
-    - NODE_URL：本地MOCK的host和port；
-- port：number，本地MOCK服务器的端口号。
+    - NODE_URL：本地MOCK的URL地址；
+- port：number，本地node服务器的端口号。
 
 ## severMock
-代码逻辑有问题，暂不详述
+本地Mock时使用，启动一个本地node服务器。具体使用可查看：[Mock](/menu/mock)
+```js
+const onlineMock = {
+    env: {
+        NODE_ENV: 'onlineMock',
+        NODE_URL: ''
+    },
+    port: 3100
+};
+```
+- env：object，环境变量
+    - NODE_ENV：表示当前的MOCK环境；
+    - NODE_URL：远程MOCK的URL地址；
+- port：number，本地node服务器的端口号。
 
 
 ::: tip 提示
 所有的默认配置均可根据具体需求，进行修改和扩展。
-
 :::
