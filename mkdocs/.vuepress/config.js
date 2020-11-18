@@ -54,11 +54,12 @@ module.exports = {
                     {
                         title: 'CSS相关',
                         path: '/menu/style'
-                    },
-                    {
-                        title: '小程序相关',
-                        path: '/menu/swan'
                     }
+                    // ,
+                    // {
+                    //     title: '小程序相关',
+                    //     path: '/menu/swan'
+                    // }
                 ]
             },
             {

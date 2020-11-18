@@ -34,7 +34,7 @@ install命令主要工作：
 - 执行在package.json的scripts属性里定义的postinstall钩子；
 - 本地生成一个dist目录，和百度原生小程序的目录一致，并安装依赖。
 
-可以使用百度开发者工具打开想目录，查看是否安装成功，具体使用可参考百度小程序[官网](https://smartprogram.baidu.com/developer/index.html)。
+可以使用百度开发者工具打项目目录，查看是否安装成功，具体使用可参考百度小程序[官网](https://smartprogram.baidu.com/developer/index.html)。
 
 ## 开发
 1. **启动本地Server**

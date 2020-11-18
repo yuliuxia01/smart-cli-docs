@@ -109,7 +109,7 @@ rules.swanFile = [
 - plugins：string，匹配制定目录下的插件相关文件，eg：默认配置中的rules.plugins表示匹配业务代码目录下的plugins目录下的多有js文件；
 - swanFile：array，匹配制定目录下的插件相关文件，eg：默认配置中的rules.swanFile表示匹配业务代码目录下，除去less，stylus的所有文件。
 ## clientMock
-本地Mock时使用，启动一个本地node服务器。具体使用可查看：[Mock](/menu/mock)
+本地Mock时使用，启动一个本地node服务器。具体使用可查看：[Mock](/menu/mock)。
 ```js
 const clientMock = {
     env: {
@@ -125,7 +125,7 @@ const clientMock = {
 - port：number，本地node服务器的端口号。
 
 ## severMock
-本地Mock时使用，启动一个本地node服务器。具体使用可查看：[Mock](/menu/mock)
+本地Mock时使用，启动一个本地node服务器。具体使用可查看：[Mock](/menu/mock)。
 ```js
 const onlineMock = {
     env: {

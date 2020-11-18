@@ -38,7 +38,7 @@ Smart CLI推荐的模板目录如下
 - mock.js：本地和远程[MOCK](./mock)执行文件；
 - postinstall.js：package.json中scripts配置项的postinstall钩子执行文件；
 - project-swan-plugin.gulp.js：处理百度小程序里的project.swan.json文件；
-- server.gulp.js：启动本地服务（npm run dev）和启动MOCK服务器的执行文件。
+- server.gulp.js：启动本地服务```npm run dev```和启动MOCK服务器的执行文件。
 ### src 业务代码目录
 - assets：静态文件目录；
 - components：自定义组件目录；
@@ -48,7 +48,7 @@ Smart CLI推荐的模板目录如下
 - skeleton：骨架屏，具体用法可参考：[官网-骨架屏](https://smartprogram.baidu.com/docs/develop/performance/peformance_gradually_load/)；
 - app.js：全局JS逻辑，具体用法可参考[官网-app.js](https://smartprogram.baidu.com/docs/develop/framework/processjs/)
 - app.json：可通过配置app.json，设置SWAN的界面、路径、多Tab等，具体可参考[官网-app.json](https://smartprogram.baidu.com/docs/develop/framework/process/)；
-- app.less：主包中的全局css，对独立分包无效；
+- app.less：主包中的全局css，对独立分包无效。
 ### 小程序相关
 - project.swan.json：swan配置文件，具体配置说明[project.swan.json](./swan#project.swan.js)。
 ### 命令入口
@@ -60,6 +60,6 @@ Smart CLI推荐的模板目录如下
 - package.json：node项目的配置文件；
 - .eslintrc.js：eslint配置文件；
 - .fecsrc.js：fecs配置文件；
-- build.sh：build生成目录shell；
-- ci.yml
+- build.sh：[打包编译](/menu/build)用的脚本；
+- ci.yml：百度上线aglie编译使用的ci.yml文件。
 
