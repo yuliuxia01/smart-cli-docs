@@ -1,5 +1,5 @@
 ## 模板配置文件
-模板配置文件为config.js，该文件放在项目根目录的build目录下面，支持定制化配置修改。
+模板配置文件为config.js，该文件放在项目根目录的/build目录下面，支持定制化配置修改。
 
 ```js
 const path = require('path');

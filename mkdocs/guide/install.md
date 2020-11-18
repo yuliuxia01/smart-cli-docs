@@ -1,13 +1,11 @@
 ## 准备工作
-1. **申请一个[百度账号](https://smartprogram.baidu.com/developer/index.html)并[创建智能小程序](https://smartprogram.baidu.com/docs/introduction/register_consummate/)**
-
-2. **全局安装smart-cli**
+1. **全局安装Smart CLI**
 ```sh
-npm install @baidu/smart-cli -g --registry=http://registry.npm.baidu-int.com
+npm install -g @baidu/smart-cli
 ```
 常见安装问题可参考：[CLI安装不成功](/question#CLI安装不成功)
 
-3. **安装完成后执行smart --version，查看是否安装成功**
+2. **安装完成后执行smart --version，查看是否安装成功**
 ```sh
 smart --version
 ```

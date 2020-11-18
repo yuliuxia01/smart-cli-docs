@@ -1,5 +1,5 @@
 # 模板目录
-smart-cli推荐的模板目录如下
+Smart CLI推荐的模板目录如下
 ```js
 projectName/
 ├─ build/
@@ -42,12 +42,12 @@ projectName/
 ### src 业务代码目录
 - assets：静态文件目录；
 - components：自定义组件目录；
-- modules：独立分包，具体用法可参考[独立分包](https://smartprogram.baidu.com/docs/develop/framework/subpackages_independent/)；
-- packages：普通分包，具体用法可参考[普通分包](https://smartprogram.baidu.com/docs/develop/framework/subpackages/)；
+- modules：独立分包，具体用法可参考：[官网-独立分包](https://smartprogram.baidu.com/docs/develop/framework/subpackages_independent/)；
+- packages：普通分包，具体用法可参考：[官网-普通分包](https://smartprogram.baidu.com/docs/develop/framework/subpackages/)；
 - pages：页面文件目录；
-- skeleton：骨架屏，具体用法可参考[骨架屏](https://smartprogram.baidu.com/docs/develop/performance/peformance_gradually_load/)；
-- app.js：全局JS逻辑，具体用法可参考[app.js](https://smartprogram.baidu.com/docs/develop/framework/processjs/)
-- app.json：可通过配置app.json，设置SWAN的界面、路径、多Tab等，具体可参考[app.json](https://smartprogram.baidu.com/docs/develop/framework/process/)；
+- skeleton：骨架屏，具体用法可参考：[官网-骨架屏](https://smartprogram.baidu.com/docs/develop/performance/peformance_gradually_load/)；
+- app.js：全局JS逻辑，具体用法可参考[官网-app.js](https://smartprogram.baidu.com/docs/develop/framework/processjs/)
+- app.json：可通过配置app.json，设置SWAN的界面、路径、多Tab等，具体可参考[官网-app.json](https://smartprogram.baidu.com/docs/develop/framework/process/)；
 - app.less：主包中的全局css，对独立分包无效；
 ### 小程序相关
 - project.swan.json：swan配置文件，具体配置说明[project.swan.json](./swan#project.swan.js)。

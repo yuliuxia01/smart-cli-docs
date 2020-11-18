@@ -6,10 +6,10 @@
 module.exports = {
     // host: '127.0.0.1',
     // port: 8080,
-    title: 'smart-cli',
+    title: 'Smart CLI',
     base: '/smart-cli-docs/',
     dest: './docs',
-    description: '针对小程序的开发工具',
+    description: '针对百度原生小程序的开发脚手架工具',
     themeConfig: {
         nav: [
             {text: '介绍', link: '/introduce'},
