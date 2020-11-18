@@ -21,7 +21,9 @@ smart init <app_name>
 ```sh
 smart init .
 ```
-根据命令行提示选择'Overwrite'
+会有命令行提示：
+- 'Overwrite'，表示继续执行初始化，下载远程模板目录到当前目录，并替换掉当前目录下所有文件；
+- 'Cancel'，表示结束命令行，退出初始化。
 :::
 
 ## 安装依赖
@@ -32,7 +34,12 @@ npm install
 install命令主要工作：
 - 安装当前目录下package.json中的依赖；
 - 执行在package.json的scripts属性里定义的postinstall钩子；
-- 本地生成一个dist目录，和百度原生小程序的目录一致，并安装依赖。
+
+::: tip 提示
+执行scripts属性里定义的postinstall钩子时，主要做了以下工作：
+- 复制项目目录下的.npmrc、package.json、package-lock.json文件到dist目录下；
+- 在dist目录下安装依赖，并且只安装了package.json中dependencies属性中包含的插件。
+:::
 
 可以使用百度开发者工具打项目目录，查看是否安装成功，具体使用可参考百度小程序[官网](https://smartprogram.baidu.com/developer/index.html)。
 
