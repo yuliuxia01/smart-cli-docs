@@ -21,5 +21,5 @@ sh build.sh
 
 #### npm run build 的主要工作：
 - 读取配置文件；
-- 根据配置文件的[rules配置](/config#rules)，将相应的文件处理成目标文件，eg：less/stylus文件处理成css文件；
-- 根据配置文件的[paths配置](/config#paths)，将上面处理好的文件输出到指定的dist目录中。
+- 根据配置文件的[rules配置](../config#rules)，将相应的文件处理成目标文件，eg：less/stylus文件处理成css文件；
+- 根据配置文件的[paths配置](../config#paths)，将上面处理好的文件输出到指定的dist目录中。
