@@ -62,5 +62,4 @@ const rules = {
   margin-top: 36.232rpx;
   text-align: center;
 }
-
 ```
