@@ -60,6 +60,6 @@ Smart CLI推荐的模板目录如下
 - package.json：node项目的配置文件；
 - .eslintrc.js：eslint配置文件；
 - .fecsrc.js：fecs配置文件，具体可参考[官网-FECS](http://fecs.baidu.com/)；
-- build.sh：[打包编译](/menu/build)用的脚本；
+- build.sh：[打包编译](./build)用的脚本；
 - ci.yml：百度上线aglie编译使用的ci.yml文件。
 
