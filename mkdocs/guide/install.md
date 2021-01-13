@@ -3,7 +3,7 @@
 ```sh
 npm install -g @baidu/smart-cli
 ```
-常见安装问题可参考：[CLI安装不成功](./question#cli安装不成功)
+常见安装问题可参考：[CLI安装不成功](../question#cli安装不成功)
 
 2. **安装完成后执行smart --version，查看是否安装成功**
 ```sh
