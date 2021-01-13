@@ -61,7 +61,7 @@ module.exports = {
 **配置项具体说明如下：**
 
 ## pxtorpx
-帮助开发者快速转换视图单位，目前仅支持px2rpx。具体用法可查看：[CSS相关](/menu/style#pxtorp)，
+帮助开发者快速转换视图单位，目前仅支持px2rpx。具体用法可查看：[CSS相关](./menu/style#pxtorp)，
 默认配置为：
 ```js
 const pxtorpx = {
@@ -75,7 +75,7 @@ const pxtorpx = {
 - ratio：number，像素比。
 
 ## paths
-方便[编译](/menu/build)，环境变量处理和后面配置使用，默认配置为：
+方便[编译](./menu/build)，环境变量处理和后面配置使用，默认配置为：
 ```js
 const paths = {
     develop: cwd('src'),
@@ -87,7 +87,7 @@ const paths = {
 - dist：string，编译产出目录；
 - root：string，根目录。
 ## rules
-编译时会用到，具体用法可查看：[编译Build](/menu/build)，
+编译时会用到，具体用法可查看：[编译Build](./menu/build)，
 默认配置为：
 ```js
 const rules = {
@@ -105,11 +105,11 @@ rules.swanFile = [
 ```
 - less：string，匹配制定目录下的less，eg：默认配置中的rules.less表示匹配业务代码目录下的所有less文件；
 - stylus：string，匹配制定目录下的stylus，eg：默认配置中的rules.stylus表示匹配业务代码目录下的所有stylus文件；
-- package：string，匹配制定目录下的小程序配置相关文件，eg：默认配置中的rules.package表示匹配业务代码目录下的[pkginfo.json](/menu/swan#pkginfo)、[project.swan.json](/menu/swan#project.swan)；
+- package：string，匹配制定目录下的小程序配置相关文件，eg：默认配置中的rules.package表示匹配业务代码目录下的[pkginfo.json](./menu/swan#pkginfo)、[project.swan.json](./menu/swan#project.swan)；
 - plugins：string，匹配制定目录下的插件相关文件，eg：默认配置中的rules.plugins表示匹配业务代码目录下的plugins目录下的多有js文件；
 - swanFile：array，匹配制定目录下的插件相关文件，eg：默认配置中的rules.swanFile表示匹配业务代码目录下，除去less，stylus的所有文件。
 ## clientMock
-本地Mock时使用，启动一个本地node服务器。具体使用可查看：[Mock](/menu/mock)。
+本地Mock时使用，启动一个本地node服务器。具体使用可查看：[Mock](./menu/mock)。
 ```js
 const clientMock = {
     env: {
@@ -125,7 +125,7 @@ const clientMock = {
 - port：number，本地node服务器的端口号。
 
 ## severMock
-本地Mock时使用，启动一个本地node服务器。具体使用可查看：[Mock](/menu/mock)。
+本地Mock时使用，启动一个本地node服务器。具体使用可查看：[Mock](./menu/mock)。
 ```js
 const onlineMock = {
     env: {
