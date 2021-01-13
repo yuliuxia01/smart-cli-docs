@@ -3,7 +3,7 @@
 ```sh
 npm install -g @baidu/smart-cli
 ```
-常见安装问题可参考：[CLI安装不成功](/question#cli安装不成功)
+常见安装问题可参考：[CLI安装不成功](./question#cli安装不成功)
 
 2. **安装完成后执行smart --version，查看是否安装成功**
 ```sh
@@ -15,7 +15,7 @@ smart init <app_name>
 ```
 初始化命令主要工作：
 - 当前目录下创建名称为<app_name>的目录；
-- 下载默认[模板目录](/menu/menu)到<app_name>目录下。
+- 下载默认[模板目录](./menu/menu)到<app_name>目录下。
 ::: tip 提示
 也可以在已有的项目目录下执行：
 ```sh
