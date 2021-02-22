@@ -17,13 +17,18 @@ smart init <app_name>
 - 当前目录下创建名称为<app_name>的目录；
 - 下载默认[模板目录](../menu/menu)到<app_name>目录下。
 ::: tip 提示
-也可以在已有的项目目录下执行：
+1.在已有的项目目录下执行：
 ```sh
 smart init .
 ```
 会有命令行提示：
 - 'Overwrite'，表示继续执行初始化，下载远程模板目录到当前目录，并替换掉当前目录下所有文件；
 - 'Cancel'，表示结束命令行，退出初始化。
+
+2.可以添加参数-p|--path在指定目录下初始化项目：
+```sh
+smart init -p [dir] appName
+```
 :::
 
 ## 安装依赖
@@ -68,6 +73,20 @@ sh build.sh
 ```
 编译命令，具体可以参考[编译Build](../menu/build)
 
+## 快速创建
+通过命令可以快速创建符合小程序page、component、file；
+```sh 
+smart create [options]
+Options:
+    -p --page [pageName]            create page
+    -c --component [componentName]  create component
+    -f --file <fileName>            create file
+    -h, --help                      display help for command
+```
+::: tip 提示
+**[pageName]**: 可以是目录结构的，例如 samrt create -p pages/a/
+:::
+
 ## 其他命令行
 1.
 ```sh
@@ -84,3 +103,8 @@ npm run build
 以上命名行，均可以在<app_name>目录下的package.json的scripts属性中查看，可根据具体需求进行定制化修改。
 :::
 
+3.
+```sh
+smart update
+```
+更新smart-cli。

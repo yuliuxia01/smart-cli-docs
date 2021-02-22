@@ -5,6 +5,7 @@ Smart CLI，为了方便开发百度小程序时可以快速生成小程序开�
 - 基于[百度原生小程序](https://smartprogram.baidu.com/docs/develop/tutorial/demo/)；
 - 为使用原生语法开发百度小程序提供一套快捷便利的的命令行工具；
 - 可以快速生成符合百度原生小程序开发的目录结构；
+- 通过命令行一键式生成page、component、file；
 - 支持[本地和远程MOCK](./menu/mock)，方便联调；
 - 支持stylus，less等[CSS预处理](./menu/style)；
 - 支持[px2rpx](./menu/style)单位转换；
