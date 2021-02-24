@@ -1,128 +1,84 @@
 ## 模板配置文件
-模板配置文件为config.js，该文件放在项目根目录的/build目录下面，支持定制化配置修改。
+模板配置文件为smart.config.json，支持定制化配置修改。
 
-```js
-const path = require('path');
-
-const cwd = (_path = '') => {
-    return path.resolve(process.cwd(), _path);
-};
-
-const pxtorpx = {
-    platform: 'swan',
-    designWidth: 1242,
-    ratio: 3
-};
-
-const paths = {
-    develop: cwd('src'),
-    dist: cwd('dist'),
-    root: cwd()
-};
-
-const rules = {
-    less: `${paths.develop}/**/*.less`,
-    stylus: `${paths.develop}/**/*.stylus`,
-    package: `${paths.root}/{pkginfo,project.swan}.json`,
-    plugins: `${paths.develop}/plugins/*.js`
-};
-
-rules.swanFile = [
-    `${paths.develop}/**`,
-    `!${rules.less}`,
-    `!${rules.stylus}`
-];
-
-const clientMock = {
-    env: {
-        NODE_ENV: 'clientMock',
-        NODE_URL: 'http://localhost:3000'
+```json
+{
+    "pxtorpx": {
+        "platform": "swan",
+        "designWidth": 1242,
+        "ratio": 3
     },
-    port: 3000
-};
-
-const onlineMock = {
-    env: {
-        NODE_ENV: 'onlineMock',
-        NODE_URL: ''
+    "limit": {
+        "include": [".png", ".JPEG", ".jpg"],
+        "maxSize": 1024
     },
-    port: 3100
-};
-
-module.exports = {
-    pxtorpx,
-    paths,
-    rules,
-    clientMock,
-    onlineMock
-};
+    "mock": {
+        "client": {
+            "port": 3000,
+            "host": "http://localhost"
+        },
+        "online": {
+            "port": 3100,
+            "host": "http://yapi.baidu-int.com/mock/11046"
+        }
+    }
+}
 ```
 
 **配置项具体说明如下：**
 
 ## pxtorpx
 帮助开发者快速转换视图单位，目前仅支持px2rpx。具体用法可查看：[CSS相关](./menu/style#pxtorp)，
-默认配置为：
-```js
-const pxtorpx = {
-    platform: 'swan',
-    designWidth: 1242,
-    ratio: 3
-};
+参考配置为：
+```json
+"pxtorpx": {
+    "platform": "swan",
+    "designWidth": 1242,
+    "ratio": 3
+}
 ```
 - platform：string，转换模式，swan表示百度小程序，采用的是px2rpx；
 - designWidth：number，设计稿原尺寸；
 - ratio：number，像素比。
 
-## paths
-方便[编译](./menu/build)，环境变量处理和后面配置使用，默认配置为：
-```js
-const paths = {
-    develop: cwd('src'),
-    dist: cwd('dist'),
-    root: cwd()
-};
+## limit
+检测编译后产物的大小，并警告。
+:::tips
+小程序的包大小会影响小程序的性能，建议对于包里引用图片等资源的大小，进行限制。过大的图片，建议使用CDN。
+:::
+参考配置为：
+```json
+"limit": {
+    "include": [".png", ".JPEG", ".jpg"],
+    "maxSize": 1024
+}
 ```
-- develop：string，业务代码目录；
-- dist：string，编译产出目录；
-- root：string，根目录。
-## rules
-编译时会用到，具体用法可查看：[编译Build](./menu/build)，
-默认配置为：
-```js
-const rules = {
-    less: `${paths.develop}/**/*.less`,
-    stylus: `${paths.develop}/**/*.stylus`,
-    package: `${paths.root}/{pkginfo,project.swan}.json`,
-    plugins: `${paths.develop}/plugins/*.js`
-};
-
-rules.swanFile = [
-    `${paths.develop}/**`,
-    `!${rules.less}`,
-    `!${rules.stylus}`
-];
-```
-- less：string，匹配制定目录下的less，eg：默认配置中的rules.less表示匹配业务代码目录下的所有less文件；
-- stylus：string，匹配制定目录下的stylus，eg：默认配置中的rules.stylus表示匹配业务代码目录下的所有stylus文件；
-- package：string，匹配制定目录下的小程序配置相关文件，eg：默认配置中的rules.package表示匹配业务代码目录下的[pkginfo.json](./menu/swan#pkginfo)、[project.swan.json](./menu/swan#project.swan)；
-- plugins：string，匹配制定目录下的插件相关文件，eg：默认配置中的rules.plugins表示匹配业务代码目录下的plugins目录下的多有js文件；
-- swanFile：array，匹配制定目录下的插件相关文件，eg：默认配置中的rules.swanFile表示匹配业务代码目录下，除去less，stylus的所有文件。
-## clientMock
-本地Mock时使用，启动一个本地node服务器。具体使用可查看：[Mock](./menu/mock)。
-```js
-const clientMock = {
-    env: {
-        NODE_ENV: 'clientMock',
-        NODE_URL: 'http://localhost:3000'
+- include：指定需要限制的大小的文件后缀；
+- maxSize：指定文件大小最大值，单位(B)。
+## mock
+开发时，使用的API接口的mock配置。
+实例配置为：
+```json
+ "mock": {
+    "client": {
+        "port": 3000,
+        "host": "http://localhost"
     },
-    port: 3000
-};
+    "online": {
+        "port": 3100,
+        "host": "http://yapi.baidu-int.com/mock/11046"
+    }
+}
 ```
-- env：object，环境变量
-    - NODE_ENV：表示当前的MOCK环境；
-    - NODE_URL：本地MOCK的URL地址；
-- port：number，本地node服务器的端口号。
+- client
+本地Mock时使用，启动一个本地node服务器。具体使用可查看：[Mock](./menu/mock)。
+    - host：本地MOCK的URL地址；
+    - port：number，本地node服务器的端口号。
+
+- online
+远程Mock时使用，启动一个本地node服务器。具体使用可查看：[Mock](./menu/mock)。
+    - host：远程MOCK的URL地址；
+    - port：number，本地node服务器的端口号。
 
 ## severMock
 本地Mock时使用，启动一个本地node服务器。具体使用可查看：[Mock](./menu/mock)。
