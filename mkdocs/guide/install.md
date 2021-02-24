@@ -83,8 +83,53 @@ Options:
     -f --file <fileName>            create file
     -h, --help                      display help for command
 ```
+ - **-p|--page**: 创建一个page目录，里面包含和[pageName]同名的四个文件，后缀分别为：[.js](https://smartprogram.baidu.com/docs/develop/framework/devjs/)、[.css](https://smartprogram.baidu.com/docs/develop/framework/devcss/)、[.json](https://smartprogram.baidu.com/docs/develop/framework/devjson/)、[.swan](https://smartprogram.baidu.com/docs/develop/framework/dev/)。具体解释可参考[小程序页面](https://smartprogram.baidu.com/docs/develop/framework/function_page/)
+ - **-c|--component**: 创建一个自定义component目录，里面包含和[componentName]同名的四个文件，后缀分别为：.js、.css、.json、.swan。具体解释可参考[小程序自定义组建](https://smartprogram.baidu.com/docs/develop/framework/custom-component/)
+ - **-f|--file**: 可以快速创建一个文件，例如：
+    ```sh
+    smart create -f index.js
+    ```
+    快速创建一个page页；
+    ```javascript
+    Page({
+        data: {
+
+        },
+        onLoad: function () {
+            // 监听页面加载的生命周期函数
+        },
+        onReady: function() {
+            // 监听页面初次渲染完成的生命周期函数
+        },
+        onShow: function() {
+            // 监听页面显示的生命周期函数
+        },
+        onHide: function() {
+            // 监听页面隐藏的生命周期函数
+        },
+        onUnload: function() {
+            // 监听页面卸载的生命周期函数
+        },
+        onPullDownRefresh: function() {
+            // 监听用户下拉动作
+        },
+        onReachBottom: function() {
+            // 页面上拉触底事件的处理函数
+        },
+        onShareAppMessage: function () {
+            // 用户点击右上角转发
+        }
+    });
+    ```
+
+
 ::: tip 提示
-**[pageName]**: 可以是目录结构的，例如 samrt create -p pages/a/
+**[pageName]｜[componentName]**: 可以是目录结构的，例如 
+```sh
+samrt create -p pages/a/
+
+samrt create -c components/c/
+```
 :::
 
 ## 其他命令行
@@ -107,4 +152,10 @@ npm run build
 ```sh
 smart update
 ```
-更新smart-cli。
+更新Smart CLI命令行。
+
+4.
+```sh
+smart doc
+```
+返回Smart CLI文档地址。
