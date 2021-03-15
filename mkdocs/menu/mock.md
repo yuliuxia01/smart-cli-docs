@@ -6,8 +6,8 @@ Smart CLI同时支持本地MOCK和远程MOCK，具体使用如下：
 ### 本地MOCK
 
 1. **修改配置**
-```json
-# smart.config.json/mock
+```js
+// smart.config.json/mock
 "client": {
     "port": 3000,
     "host": "http://localhost"
@@ -19,7 +19,7 @@ mock文件支持json和function两种格式。
 :::
 实例：
 ```js
-# mock/title/title.js
+// mock/title/title.js
 module.exports = (req, res) => {
     return {
         code: 0,
@@ -34,7 +34,7 @@ module.exports = (req, res) => {
         }
     };
 };
-# 或者 mock/title/title.json
+// 或者 mock/title/title.json
 {
     "code": 0,
     "msg": "请求成功",
@@ -62,7 +62,6 @@ npm run mock:clientMock
  * @description index pages
  */
 import api from '../../assets/js/api.conf.js';
-
 Page({
     hasRequest: true,
     data: {
@@ -132,7 +131,6 @@ Page({
     }
 });
 ```
-
 ### 远程MOCK
 1. **修改配置**
 ```json
