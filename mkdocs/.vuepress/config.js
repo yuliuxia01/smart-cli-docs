@@ -75,7 +75,7 @@ module.exports = {
                 path: '/update'
             },
             {
-                title: '技术团队',
+                title: '加入我们',
                 path: '/standard'
             }
         ]

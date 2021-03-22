@@ -133,8 +133,8 @@ Page({
 ```
 ### 远程MOCK
 1. **修改配置**
-```json
-# smart.config.json/online
+```js
+// smart.config.json/online
 "online": {
     "port": 3100,
     "host": "http://yapi.baidu-int.com/mock/11046"
