@@ -122,9 +122,9 @@ Options:
 ::: tip 提示
 **[pageName]｜[componentName]**: 可以是目录结构的，例如 
 ```sh
-samrt create -p pages/a/
+smart create -p pages/a/
 
-samrt create -c components/c/
+smart create -c components/c/
 ```
 :::
 
