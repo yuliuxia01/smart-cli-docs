@@ -4,28 +4,28 @@ Smart CLI推荐的模板目录如下
 <app_name>/
 │
 ├─ src/
-│  └─ assert/
-│  ├─ components/  
-│  ├─ modules/
-│  ├─ packages/
-│  ├─ pages/
-│  ├─ skeleton/
-│  ├─ app.js
-│  ├─ app.json
-│  └─ app.less
+│  └─ assert/                       // 静态文件目录
+│  ├─ components/                   // 自定义组件目录
+│  ├─ modules/                      // 独立分包
+│  ├─ packages/                     // 普通分包
+│  ├─ pages/                        // 页面文件目录
+│  ├─ skeleton/                     // 骨架屏文件目录
+│  ├─ app.js                        // app.js 中存放全局的 JavaScript 逻辑
+│  ├─ app.json                      // 可以通过配置 app.json 文件对小程序进行全局配置
+│  └─ app.less                      // 主包中的全局css，对独立分包无效
 │
-├─ mock/
+├─ mock/                            // mock文件目录
 │
-├─ .eslintrc
-├─ .fecsrc
-├─ build.sh
-├─ ci.yml
-├─ jconfig.json
-├─ package.json
-├─ pkginfo.json
-├─ project.swan.json
-├─ README.md
-└─ smart.config.json
+├─ .eslintrc                        // eslint配置文件
+├─ .fecsrc                          // fecs配置文件
+├─ build.sh                         // 打包编译用的脚本
+├─ ci.yml                           // 百度上线aglie编译使用的ci.yml文件
+├─ jsconfig.json                    // 
+├─ package.json                     // node项目的配置文件
+├─ pkginfo.json                     // 小程序配置文件
+├─ project.swan.json                // swan配置文件
+├─ README.md                        // 项目说明文件
+└─ smart.config.json                // smart配置文件
 ```
 ### src 业务代码目录
 - assets：静态文件目录；
@@ -44,6 +44,7 @@ Smart CLI推荐的模板目录如下
 目录规则可以根据具体的api路径拟定，mock文件的返回格式可以是json或者function，具体实现可参考：[Mock](./mock)。
 
 ### Smart CLI编译配置信息
+- smart.config.json：模板配置文件，具体使用可参考：[配置](../config)。
 ### 其他
 - package.json：node项目的配置文件；
 - .eslintrc.js：eslint配置文件；
